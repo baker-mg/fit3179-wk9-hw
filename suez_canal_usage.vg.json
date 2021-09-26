@@ -64,7 +64,7 @@
 					{
 						"field": "CargoTon",
 						"type": "quantitative",
-						"title": "Amount of Cargo (1000s of tonnes)",
+						"title": "Amount of Cargo",
                         "format": ","
 					}
 				]
