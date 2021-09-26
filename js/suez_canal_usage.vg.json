@@ -45,11 +45,12 @@
             "color": {
                 "field": "CargoTon",
                 "type": "quantitative"
-            }
-        },
-        "tooltip": [
-            { "field": "properties.name", "type": "nominal", "title": "Country" },
-            { "field": "CargoTon", "type": "quantitative" }
-        ]}
-    ]
+            },
+            "tooltip": [
+                { "field": "properties.name", "type": "nominal", "title": "Country" },
+                {"field": "CanalSide", "type": "nominal", "title": "Canal Side"},
+                { "field": "CargoTon", "type": "quantitative" }
+            ]}
+        }
+    ]    
 }
