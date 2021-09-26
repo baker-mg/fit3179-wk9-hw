@@ -1,0 +1,74 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"width": 800,
+	"height": 400,
+	"title": {
+		"text": "Suez Canal Usage by Countries",
+        "subtitle": "Values are from 2019 and are measured in 1000s of tonnes.",
+        "orient": "top",
+        "anchor": "start",
+        "align": "left",
+        "encode": {
+              "subtitle": {
+                "enter": {
+                    "fontStyle": {
+                        "value": "italic"
+                    }
+                }
+              }
+            }
+	},
+	"projection": { "type": "equalEarth" },
+	"layer": [
+		{
+			"data": {
+				"url": "data/world-topo.json",
+				"format": {
+					"type": "topojson",
+					"feature": "custom.geo"
+				}
+			},
+			"mark": {
+				"type": "geoshape",
+				"fill": "lightgray",
+				"stroke": "white"
+			}
+		},
+		{
+			"data": {
+				"url": "data/data.csv"
+			},
+			"mark": {
+				"type": "circle"
+			},
+			"encoding": {
+				"longitude": { "field": "lon", "type": "quantitative" },
+				"latitude": { "field": "lat", "type": "quantitative" },
+				"size": {
+					"field": "CargoTon",
+					"type": "quantitative",
+                    "title": "Cargo (1000s of tonnes)"
+				},
+				"color": {
+					"field": "CanalSide",
+					"type": "nominal",
+                    "title": "Canal Side"
+				},
+				"tooltip": [
+					{ "field": "Country", "type": "nominal" },
+					{
+						"field": "CanalSide",
+						"type": "nominal",
+						"title": "Canal SIde"
+					},
+					{
+						"field": "CargoTon",
+						"type": "quantitative",
+						"title": "Amount of Cargo (1000s of tonnes)",
+                        "format": ","
+					}
+				]
+			}
+		}
+	]
+}

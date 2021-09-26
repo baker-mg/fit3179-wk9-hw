@@ -1,23 +1,21 @@
-Country,CanalSide,CargoTon,Percentage
-Netherlands,North,119668,11.6
-Egypt,North,107813,10.5
-United States,North,85587,8.3
-Spain,North,66792,6.5
-Greece,North,66592,6.5
-U.K.,North,63786,6.2
-Russia,North,61967,6.0
-Turkey,North,54965,5.3
-Ukrania,North,53131,5.2
-Morocco,North,50571,4.9
-Other,North,300323,29.1
-Saudi Arabia,South,209796,20.3
-Singapore,South,177857,17.2
-China,South,115651,11.2
-India,South,94497,9.2
-Malaysia,South,83649,8.1
-Srilanka,South,43185,4.2
-United Arab Emirates,South,42884,4.2
-Oman,South,36182,3.5
-Iraq,South,32688,3.2
-Qatar,South,29935,2.9
-Other,South,164870,16.0
+Country,CanalSide,CargoTon,Percentage,lat,lon
+Netherlands,North,119668,11.6,52.132633,5.291266
+Egypt,North,107813,10.5,26.820553,30.802498
+United States,North,85587,8.3,37.09024,-95.712891
+Spain,North,66792,6.5,40.463667,-3.74922
+Greece,North,66592,6.5,39.074208,21.824312
+U.K.,North,63786,6.2,55.378051,-3.435973
+Russia,North,61967,6.0,61.52401,105.318756
+Turkey,North,54965,5.3,	38.963745,35.243322
+Ukraine,North,53131,5.2,48.379433,31.16558
+Morocco,North,50571,4.9,31.791702,-7.09262
+Saudi Arabia,South,209796,20.3,23.885942,45.079162
+Singapore,South,177857,17.2,1.352083,103.819836
+China,South,115651,11.2,35.86166,104.195397
+India,South,94497,9.2,20.593684,78.96288
+Malaysia,South,83649,8.1,4.210484,101.975766
+Srilanka,South,43185,4.2,7.873054,80.771797
+United Arab Emirates,South,42884,4.2,23.424076,53.847818
+Oman,South,36182,3.5,21.512583,55.923255
+Iraq,South,32688,3.2,33.223191,43.679291
+Qatar,South,29935,2.9,25.354826,51.183884
